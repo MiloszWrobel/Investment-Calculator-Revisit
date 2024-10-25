@@ -1,9 +1,9 @@
-export default function UserInput() {
+export default function UserInput({ text, id }) {
   return (
     <div className="input-group">
       <div>
-        <label htmlFor="initial-investment">Initial Investment</label>
-        <input type="number" id="initial-investment" />
+        <label htmlFor={id}>{text}</label>
+        <input type="number" id={id} />
       </div>
     </div>
   );
