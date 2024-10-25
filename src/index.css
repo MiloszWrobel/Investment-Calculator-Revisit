@@ -98,3 +98,41 @@ body {
   flex: 1 1 45%; /* Adjusts to create two items per row */
   min-width: 12rem;
 }
+
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 1rem; /* Add spacing between buttons */
+  margin: 2rem 0; /* Add vertical spacing around the button container */
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e1eeeb; /* Text color matching body text */
+  background: linear-gradient(
+    180deg,
+    #307e6c,
+    #2b996d
+  ); /* Match the user input background */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(
+    180deg,
+    #2b996d,
+    #307e6c
+  ); /* Invert gradient on hover */
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #76c0ae; /* Focus outline matching input border color */
+}
