@@ -136,3 +136,27 @@ body {
   outline: none;
   box-shadow: 0 0 0 2px #76c0ae; /* Focus outline matching input border color */
 }
+
+.calculate-button {
+  padding: 0.75rem 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff; /* White text color */
+  background-color: #000000; /* Black background */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 1rem 0; /* Add vertical margins for spacing */
+}
+
+.calculate-button:hover {
+  background-color: #333333; /* Darker gray on hover */
+}
+
+.calculate-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #76c0ae; /* Focus outline matching input border color */
+}
